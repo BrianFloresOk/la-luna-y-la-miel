@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Luna y la Miel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <!-- Navegacion -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <h1 id="title_page">La luna y la miel</h1>
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nosotros">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reserva">Reservá</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- FIN Navegacion -->
+        </header>
+
+        <section id="presentation">
+            <div id="speach">
+                <p>Disfrutá de la mejor comida en un solo lugar
+                </p>
+                <p>Nos dedicamos a brindar el mejor servicio para que experimentes lo mejor de nuestros platos.
+                    Sabor y excelencia te están esperando.</p>
+            </div>
+            <div id="fondo_lateral_container">
+                <img src="../public/images/fondo_2.png" alt="plato_fondo">
+            </div>
+        </section>
+        <!-- Seccion de mejores platos -->
+        <div class="title">
+            <h2>Nuestros mejores platos</h2>
+        </div>
+        <!-- Carrusel de los platos -->
+        <section id="best_foods">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/public/images/ensalada_mariscos.png" class="image_card" alt="ensalada_mariscos">
+                        <p class="name"><strong>Ensalada con mariscos</strong></p>
+                        <p class="price position">$1000</p>
+                        <div class="position">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images/ensalada_mariscos.png" class="image_card" alt="ensalada_mariscos">
+                        <p class="name"><strong>Ensalada con mariscos</strong></p>
+                        <p class="price position">$1000</p>
+                        <div class="position">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images/ensalada_mariscos.png" class="image_card" alt="ensalada_mariscos">
+                        <p class="name"><strong>Ensalada con mariscos</strong></p>
+                        <p class="price position">$1000</p>
+                        <div class="position">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images/ensalada_mariscos.png" class="image_card" alt="ensalada_mariscos">
+                        <p class="name"><strong>Ensalada con mariscos</strong></p>
+                        <p class="price position">$1000</p>
+                        <div class="position">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- FIN seccion de mejores platos -->
+    </div>
+    <main>
+
+        <!-- Seccion sobre nosotros -->
+        <section class="section">
+            <div>
+                <article>
+                    <h2 id="nosotros">Sobre nosotros</h2>
+                    <div>
+                        <p>En La Luna y La Miel, la pasión por la comida y la hospitalidad se fusionan para brindarte
+                            una experiencia culinaria única bajo el resplandor de la luna y la dulzura de la miel.
+                            Nuestro restaurante es más que un lugar para comer; es un rincón de encanto y sabor donde
+                            cada detalle está cuidadosamente diseñado para sorprenderte.</p>
+                        <p>
+                            Nos enorgullece ser parte de tu historia y esperamos seguir siéndolo en cada celebración,
+                            cada cena romántica y cada reunión especial. En La Luna y La Miel, la magia de la comida se
+                            mezcla con la calidez de nuestro equipo para ofrecerte una experiencia que brilla como la
+                            luna y es tan dulce como la miel.
+
+                            ¡Te damos la bienvenida a nuestro rincón gastronómico!
+                        </p>
+
+                    </div>
+                </article>
+            </div>
+            <div id="banner_container">
+                <article class="banner">
+                    <img src="../public/images/barista.jpg" alt="barista">
+                </article>
+                <article class="banner">
+                    <img src="../public/images/mesa-1.jpg" alt="mesa-1">
+                </article>
+                <article class="banner">
+                    <img src="../public/images/brindis.jpg" alt="brindis">
+                </article>
+            </div>
+        </section>
+        <!-- FIN seccion sobre nosotros -->
+
+
+        <div id="menu">
+            <div class="menu_title_container">
+                <h2 class="menu_title">Menú</h2>
+            </div>
+            <section class="section_menu">
+                <div class="subTitle_menu">
+                    <h4>Ensaladas</h4>
+                </div>
+                <div id="carouselEnsaladas" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/public/images/ensalada_mariscos.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/ensalada.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/ensalada_pollo.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/ensalada.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEnsaladas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEnsaladas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="section_menu">
+                <div class="subTitle_menu">
+                    <h4>Carnes</h4>
+                </div>
+                <div id="carouselMenuMain" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/public/images/bistec.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/estofado.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/albondigas.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/lasaña.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenuMain"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMenuMain"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="section_menu">
+                <div class="subTitle_menu">
+                    <h4>Pastas</h4>
+                </div>
+                <div id="carouselPastas" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/public/images/bistec.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/estofado.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/albondigas.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/lasaña.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPastas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPastas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="section_menu">
+                <div class="subTitle_menu">
+                    <h4>Postres</h4>
+                </div>
+                <div id="carouselPostres" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/public/images/bistec.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/estofado.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/albondigas.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/public/images/lasaña.png" class="image_card" alt="ensalada_mariscos">
+                            <p class="name"><strong>Ensalada con mariscos</strong></p>
+                            <p class="price position">$1000</p>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostres"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPostres"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section id="reserva">
+            <div class="contact_section">
+                <div class="form_container">
+                    <div class="title_reserva">
+                        <h4>Reservá</h4>
+                    </div>
+                    <form>
+                        <div>
+                            <div class="campo_container">
+                                <label for="fecha">Escoge la fecha</label>
+                                <input class="campo" type="date" name="fecha" id="fecha">
+                            </div>
+                            <div class="campo_container">
+                                <label for="nombre">Nombre</label>
+                                <input class="campo" type="text" name="nombre" id="nombre">
+                            </div>
+                            <div class="campo_container">
+                                <label for="email">Email</label>
+                                <input class="campo" type="text" name="email" id="email">
+                            </div>
+                            <div class="campo_container">
+                                <label for="comentario">Comentario <span>(opcional)</span></label>
+                                <textarea class="campo" name="comentario" id="comentario" cols="10" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="button_container">
+                            <button>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="map_container">
+                    <div>
+                        <h4>Visitanos</h4>
+                        <div>
+                            <p>Calle falsa 123</p>
+                            <p>Tel: +54-40324032</p>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26276.41805764633!2d-58.41941049174524!3d-34.59019418951782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82d892d10f%3A0xd5ed409d6ee386cf!2sBarrio%20Norte%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1695692043472!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer_container">
+            <article class="footer_logo">
+                <div>
+                    <h2>La luna y la miel</h2>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. a explicabo.</p>
+                </div>
+            </article>
+            <div>
+                <article>
+                    <div>
+                        <h4>Acceso rapido</h4>
+                    </div>
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Sobre nosotros</li>
+                        <li>Menu</li>
+                        <li>Reserva</li>
+                    </ul>
+                </article>
+                <article>
+                    <div>
+                        <h4>Ayuda</h4>
+                    </div>
+                    <ul>
+                        <li>Visitanos</li>
+                        <li>Medios de pago</li>
+                        <li>Delivery</li>
+                    </ul>
+                </article>
+                <article>
+                    <div>
+                        <h4>Redes</h4>
+                    </div>
+                    <ul>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Pedidos ya</a></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+        <div>
+            <p>&COPY; Copyright 2023 - La luna y la miel</p>
+        </div>
+    </footer>
+</body>
+
+</html>
