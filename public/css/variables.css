@@ -8,7 +8,6 @@
     /* COLORES */
     --blanco: #FFFFFF;
     --blanco2: #FCFDEE;
-    /*     --amarillo-pastel (gradiente)->#FCFDEE - #EFC65D; */
     --color1: #FCFDEE;
     --color2: #EFC65D;
     --bg-gradiente: linear-gradient(to bottom, #EFC65D, #FCFDEE);
@@ -18,7 +17,7 @@
     --gris-claro: #d3d3d3;
     --negro: #1F1F1E;
     
-        /* Fuentes */
+    /* Fuentes */
     --font-play: 'Playfair Display', serif;
     --font-nautigal: 'The Nautigal', cursive;
 }
