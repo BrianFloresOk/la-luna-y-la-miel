@@ -1,4 +1,5 @@
 @import url("./variables.css");
+@import url("./slider.css");
 
 ul,
 li {
@@ -115,15 +116,6 @@ body {
     height: 320px;
 }
 
-.image_card {
-    display: block;
-    width: 75%;
-    height: 225px;
-    margin: auto;
-    object-fit: contain;
-}
-
-.name,
 .fa-star {
     text-align: center;
     color: var(--marron-rojizo);
@@ -131,7 +123,8 @@ body {
 
 /* cards */
 .position {
-    margin-left: 1rem;
+    position: absolute;
+    bottom: 20px;
 }
 
 .price {
@@ -201,6 +194,7 @@ body {
 
 .subTitle_menu {
     width: 100%;
+    border-bottom: 2px solid var(--rojo-claro);
 
     & h4 {
         font-size: 1.5rem;
@@ -363,6 +357,7 @@ footer {
     justify-content: center;
     align-items: center;
     transition: color .3s ease;
+    color: lightgray;
 
     &:hover {
         color: white;
@@ -378,5 +373,92 @@ footer {
 
     & p {
         font-size: 12px;
+    }
+}
+
+/* Media queries */
+
+/* TABLET */
+@media (min-width: 768px) {
+
+    .title h2 {
+        font-size: 12.5vh;
+        font-weight: 500;
+    }
+
+
+    .links {
+        font-size: 14px;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+
+    .contact_section {
+        display: flex;
+        width: 100%;
+    }
+
+    .form_container,
+    .map_container {
+        width: 50%;
+    }
+
+    .map_container {
+        margin: 0;
+
+        & iframe {
+            border-radius: 8px;
+            padding: 10px 10px 0px 10px;
+            height: 80%;
+        }
+    }
+
+    .directions {
+        height: 20%;
+    }
+
+    #banner_container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+
+
+    /* Footer */
+    footer {
+        padding: 3rem 2rem 1rem;
+    }
+
+    .footer_container {
+        display: flex;
+        width: 100%;
+        height: 200px;
+    }
+
+    .footer_logo {
+        width: 30%;
+    }
+
+    .footer_contains {
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+
+        & article {
+            margin: 0;
+        }
+    }
+
+    #copy {
+        text-align: end;
     }
 }

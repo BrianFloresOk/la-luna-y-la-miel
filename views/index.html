@@ -5,11 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>La Luna y la Miel</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
         defer></script>
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Css -->
     <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 
@@ -57,9 +65,9 @@
                 <p>Nos dedicamos a brindar el mejor servicio para que experimentes lo mejor de nuestros platos.
                     Sabor y excelencia te están esperando.</p>
             </div>
-            <div id="fondo_lateral_container">
+            <!--             <div id="fondo_lateral_container">
                 <img src="..../public/images/fondos/fondo_2.png" alt="plato_fondo" loading="lazy">
-            </div>
+            </div> -->
         </section>
         <!-- Seccion de mejores platos -->
         <div class="title">
@@ -67,81 +75,145 @@
         </div>
         <!-- Carrusel de los platos -->
         <section id="best_foods">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../public/images/ensaladas/ensalada_mariscos.png" class="image_card"
-                            alt="ensalada_mariscos">
-                        <p class="name"><strong>Ensalada con mariscos</strong></p>
-                        <p class="price position">$2500</p>
-                        <div class="position">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+            <!-- Swipper -->
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../public/images/carnes/bistec.png" alt="bistec" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Ojo de bife con vegetales</h2>
+                                <p class="description">Exquisito bistec a la plancha, jugoso y lleno de sabor, se
+                                    combina perfectamente con los vegetales asados, creando un plato irresistible que
+                                    deleita el paladar con cada bocado
+                                </p>
+                                <div class="position">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../public/images/carnes/bistec.png" class="image_card" alt="bistec">
-                        <p class="name"><strong>Ojo de bife con vegetales</strong></p>
-                        <p class="price position">$2000</p>
-                        <div class="position">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../public/images/ensaladas/ensalada_mariscos.png" alt="ensalada_mariscos"
+                                        class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Ensalada con mariscos</h2>
+                                <p class="description">La frescura de los mariscos se combina con la variedad de
+                                    vegetales en esta ensalada, creando un plato delicioso y saludable que te transporta
+                                    al mar en cada bocado.
+                                </p>
+                                <div class="position">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../public/images/carnes/salmon_verduras.png" class="image_card" alt="salmon">
-                        <p class="name"><strong>Salmón rosado con mix ensalada</strong></p>
-                        <p class="price position">$2800</p>
-                        <div class="position">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../public/images/carnes/salmon_verduras.png" alt="salmon_verduras"
+                                        class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Salmón rosado con ensalada fresca</h2>
+                                <p class="description">Nuestro salmón rosado, delicadamente cocido, se une a una
+                                    ensalada fresca y colorida. La combinación de sabores frescos y texturas crujientes
+                                    hace de este plato una experiencia culinaria excepcional.
+                                </p>
+                                <div class="position">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../public/images/pastas/lasaña.png" class="image_card" alt="lasaña">
-                        <p class="name"><strong>Lasaña</strong></p>
-                        <p class="price position">$2000</p>
-                        <div class="position">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../public/images/pastas/lasaña.png" alt="lasaña" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Lasaña</h2>
+                                <p class="description">Nuestra lasaña, un clásico italiano, es un festín de capas de
+                                    pasta al dente, ricotta cremosa, salsa de tomate casera y queso fundido. Una
+                                    indulgencia reconfortante que deleitará tu paladar.
+                                </p>
+                                <div class="position">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../public/images/carnes/paella.png" class="image_card" alt="paella">
-                        <p class="name"><strong>Paella</strong></p>
-                        <p class="price position">$2500</p>
-                        <div class="position">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../public/images/carnes/paella.png" alt="paella" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Paella</h2>
+                                <p class="description">Nuestra Paella, un auténtico deleite español, fusiona el arroz
+                                    con mariscos frescos, tiernos trozos de pollo y una mezcla de especias que
+                                    transportan tus sentidos a la costa mediterránea. Una deliciosa experiencia
+                                    culinaria.
+                                </p>
+                                <div class="position">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="../public/images/pastas/estofado.png" alt="estofado" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">Estofado de cordero</h2>
+                                <p class="description">Nuestro estofado de cordero es una explosión de sabor y ternura.
+                                    La carne se deshace en una mezcla de especias y vegetales, un verdadero deleite
+                                    reconfortante.
+                                </p>
+                                <div class="position">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- FIN seccion de mejores platos -->
@@ -193,213 +265,396 @@
                 <div class="subTitle_menu">
                     <h4>Ensaladas</h4>
                 </div>
-                <div id="carouselEnsaladas" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../public/images/ensaladas/ensalada_mariscos.png" class="image_card"
-                                alt="ensalada_mariscos">
-                            <p class="name"><strong>Ensalada con mariscos</strong></p>
-                            <p class="price position">$2500</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/ensaladas/ensalada.png" class="image_card" alt="ensalada">
-                            <p class="name"><strong>Ensalada</strong></p>
-                            <p class="price position">$1800</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/ensaladas/ensalada_pollo.png" class="image_card"
-                                alt="ensalada_pollo">
-                            <p class="name"><strong>Ensalada con pechuga picante</strong></p>
-                            <p class="price position">$1900</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/ensaladas/pollo_ensalada.png" class="image_card"
-                                alt="ensalada_crispy">
-                            <p class="name"><strong>Ensalada con pollo ahumado</strong></p>
-                            <p class="price position">$2000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/ensaladas/arroz_vegetales.png" class="image_card" alt="arroz">
-                            <p class="name"><strong>Arroz con vegetales</strong></p>
-                            <p class="price position">$1600</p>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/ensaladas/ensalada.png" alt="ensalda"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Ensalada con burrata</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/ensaladas/ensalada-cesar.png" alt="ensalada-cesar"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Ensalada César</h2>
+                                    <p class="price">$3000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/ensaladas/pollo_ensalada.png" alt="arroz-vegetales"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Pollo picante con hojas verdes</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/ensaladas/ensalada_mariscos.png" alt="ensalda"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Ensalada del mar</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/ensaladas/ensalada_pollo.png" alt="ensalda"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Ensalada con pollo agridulce</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/ensaladas/arroz_vegetales.png" alt="ensalda"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Arroz japones con vegetales</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEnsaladas"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEnsaladas"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
                 </div>
+
             </section>
             <section class="section_menu">
                 <div class="subTitle_menu">
-                    <h4>Carnes</h4>
+                    <h4>Principales</h4>
                 </div>
-                <div id="carouselMenuMain" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../public/images/carnes/bistec.png" class="image_card" alt="bistec">
-                            <p class="name"><strong>Ojo de bife con vegetales</strong></p>
-                            <p class="price position">$2000</p>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/bistec.png" alt="bistec" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Ojo de bife con vegetales</h2>
+                                    <p class="price">$3000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/brochetas.png" alt="brochetas"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Brochetas de cordero</h2>
+                                    <p class="price">$3000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/milanesa-papas.png" alt="milanesa-papas.png"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Milanesa de ternera con guarnición</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/churrasco-cordero-papas.png" alt="cordero"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Cordero a la hierbas</h2>
+                                    <p class="price">$3000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/paella.png" alt="paella" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Paella clásica</h2>
+                                    <p class="price">$3200</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/pollo_plancha.png" alt="pollo"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Pechuga rellena</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/risotto.png" alt="risotto" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Risoto con hongos</h2>
+                                    <p class="price">$2300</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/salmon_verduras.png" alt="salmon"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Salmon rosado con ensalada fresca</h2>
+                                    <p class="price">$3200</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/carnes/tallarines_salteados.png" alt="tallarines"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Tallarines salteados</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/carnes/brochetas.png" class="image_card" alt="brochetas">
-                            <p class="name"><strong>Brochetas de cerdo</strong></p>
-                            <p class="price position">$1200</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/carnes/pollo_plancha.png" class="image_card" alt="pollo">
-                            <p class="name"><strong>Pollo a la pimienta con vegetales</strong></p>
-                            <p class="price position">$1300</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/carnes/churrasco-cordero-papas.png" class="image_card"
-                                alt="cordero">
-                            <p class="name"><strong>Churrasco de cordero</strong></p>
-                            <p class="price position">$2000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/carnes/milanesa-papas.png" class="image_card" alt="milanesa">
-                            <p class="name"><strong>Milanesa con guarnición</strong></p>
-                            <p class="price position">$1500</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/carnes/paella.png" class="image_card" alt="paella">
-                            <p class="name"><strong>Paella</strong></p>
-                            <p class="price position">$2500</p>
-                        </div>
-
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenuMain"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMenuMain"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
                 </div>
             </section>
             <section class="section_menu">
                 <div class="subTitle_menu">
                     <h4>Pastas</h4>
                 </div>
-                <div id="carouselPastas" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../public/images/pastas/albondigas.png" class="image_card" alt="albondigas">
-                            <p class="name"><strong>Albondigas de cordero y novillo</strong></p>
-                            <p class="price position">$1000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/pastas/estofado.png" class="image_card" alt="estofado">
-                            <p class="name"><strong>Estofado de carne</strong></p>
-                            <p class="price position">$1000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/pastas/tallarin.png" class="image_card" alt="tallarines">
-                            <p class="name"><strong>Tallarin</strong></p>
-                            <p class="price position">$1000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/pastas/lasaña.png" class="image_card" alt="lasaña">
-                            <p class="name"><strong>Lasaña</strong></p>
-                            <p class="price position">$2000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/pastas/fideos-crema.png" class="image_card" alt="fideos-crema">
-                            <p class="name"><strong>Fideos con crema y hongos</strong></p>
-                            <p class="price position">$2000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/pastas/tallarin-con-bolognesa.png" class="image_card" alt="tallarin-con-bolognesa">
-                            <p class="name"><strong>Spaguetti con ragú</strong></p>
-                            <p class="price position">$1900</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/pastas/mostachol.png" class="image_card" alt="mostacholes">
-                            <p class="name"><strong>Mostacholes a la veneciana</strong></p>
-                            <p class="price position">$1900</p>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/pastas/albondigas.png" alt="albondigas"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Albondigas de cordero y novillo</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/pastas/estofado.png" alt="estofado" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Estofado de carne</h2>
+                                    <p class="price">$3000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/pastas/fideos-crema.png" alt="fideos-crema"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Fideos a la crema</h2>
+                                    <p class="price">$2500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/pastas/lasaña.png" alt="lasaña" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Lasaña</h2>
+                                    <p class="price">$3000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/pastas/mostachol.png" alt="mostacholes"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Mostacholes a la veneciana</h2>
+                                    <p class="price">$2000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/pastas/tallarin-con-bolognesa.png" alt="bolognesa"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Tallarines con ragú de cordero</h2>
+                                    <p class="price">$2800</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPastas"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPastas"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
                 </div>
+
             </section>
             <section class="section_menu">
                 <div class="subTitle_menu">
                     <h4>Postres</h4>
                 </div>
-                <div id="carouselPostres" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../public/images/postres/mouse-chocolate-crema.png" class="image_card" alt="mouse-chocolate-crema">
-                            <p class="name"><strong>Mouse de chocolate con crema</strong></p>
-                            <p class="price position">$1000</p>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/mouse-chocolate-crema.png" alt="mouse-crema" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Mouse de chocolate con crema</h2>
+                                    <p class="price">$1200</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/copa-helado.png" alt="copa-helado.png"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Copa de helado artesanal</h2>
+                                    <p class="price">$1000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/panqueque.png" alt="panqueque.png"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Panqueques con miel</h2>
+                                    <p class="price">$1000</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/rollo-suizo.png" alt="postre-suizo"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Postre suizo</h2>
+                                    <p class="price">$1300</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/torta-oreo.png" alt="torta-oreo" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Torta de oreo</h2>
+                                    <p class="price">$1200</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/torta-frutos-secos.png" alt="torta-frutos-secos"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Torta con frutos secos</h2>
+                                    <p class="price">$1500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/torta-frutos-del-bosque.png" alt="torta-frutos-del-bosque" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Torta con frutos silvestres</h2>
+                                    <p class="price">$1500</p>
+                                </div>
+                            </div>
+                            <div class="menu-card swiper-slide">
+                                <div class="image-content">
+                                    <div class="card-image">
+                                        <img src="../public/images/postres/torta-de-cafe.png" alt="cafe"
+                                            class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Torta dulce de cafe</h2>
+                                    <p class="price">$1200</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/postres/copa-helado.png" class="image_card" alt="helado">
-                            <p class="name"><strong>Copa de helado</strong></p>
-                            <p class="price position">$1000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/postres/panqueque.png" class="image_card" alt="panqueque">
-                            <p class="name"><strong>Panqueques con miel</strong></p>
-                            <p class="price position">$1000</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/postres/rollo-suizo.png" class="image_card" alt="rollo_suizo">
-                            <p class="name"><strong>Postre suizo</strong></p>
-                            <p class="price position">$1200</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/postres/torta-oreo.png" class="image_card" alt="torta_oreo">
-                            <p class="name"><strong>Torta de oreo</strong></p>
-                            <p class="price position">$1300</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/postres/torta-frutos-secos.png" class="image_card" alt="frutos_secos">
-                            <p class="name"><strong>Tortas con frutos secos</strong></p>
-                            <p class="price position">$1500</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/postres/torta-frutos-del-bosque.png" class="image_card" alt="torta_bosque">
-                            <p class="name"><strong>Torta con frutos silvestres</strong></p>
-                            <p class="price position">$1200</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../public/images/postres/torta-de-cafe.png" class="image_card" alt="torta_dulce">
-                            <p class="name"><strong>Torta dulce de cafe</strong></p>
-                            <p class="price position">$1300</p>
-                        </div>
-
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostres"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPostres"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
                 </div>
+
             </section>
         </div>
 
@@ -466,10 +721,10 @@
                         <h4>Acceso rapido</h4>
                     </div>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Sobre nosotros</a></li>
-                        <li><a href="#menu">Menú</a></li>
-                        <li><a href="#reserva">Reservá</a></li>
+                        <li><a class="links" href="#inicio">Inicio</a></li>
+                        <li><a class="links" href="#nosotros">Sobre nosotros</a></li>
+                        <li><a class="links" href="#menu">Menú</a></li>
+                        <li><a class="links" href="#reserva">Reservá</a></li>
                     </ul>
                 </article>
                 <article>
@@ -477,9 +732,9 @@
                         <h4>Ayuda</h4>
                     </div>
                     <ul>
-                        <li><a href="#visitanos">Visitanos</a></li>
-                        <li><a href="#">Medios de pago</a></li>
-                        <li><a href="#">Delivery</a></li>
+                        <li><a class="links" href="#visitanos">Visitanos</a></li>
+                        <li><a class="links" href="#">Medios de pago</a></li>
+                        <li><a class="links" href="#">Delivery</a></li>
                     </ul>
                 </article>
                 <article>
@@ -503,6 +758,9 @@
             <p>&COPY; Copyright 2023 - La luna y la miel</p>
         </div>
     </footer>
+    <!-- Swipper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../public/js/slider.js"></script>
 </body>
 
 </html>
