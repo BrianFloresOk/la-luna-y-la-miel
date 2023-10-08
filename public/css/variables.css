@@ -20,4 +20,11 @@
     /* Fuentes */
     --font-play: 'Playfair Display', serif;
     --font-nautigal: 'The Nautigal', cursive;
+    /* tamaño de fuentes */
+    --fs-xsm: 12.80px;
+    --fs-sm: 16px;
+    --fs-md: 20px;
+    --fs-lg: 25px;
+    --fs-xl: 31.25px;
+    --fs-xxl: 39.06px;
 }

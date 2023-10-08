@@ -61,25 +61,19 @@ body {
 
 #presentation {
     margin: 4rem auto;
+}
 
-    & #fondo_lateral_container {
-        /*         position: relative;
-        right: -50%;
-        top: -120px;
- */
-        position: relative;
-        top: -190px;
-        left: -53%;
-        display: none;
-    }
+#fondo_lateral_container {
+    display: none;
 
     & img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        transform: scaleX(-1)
+        /* transform: scaleX(-1) */
     }
 }
+
 
 #speach {
 
@@ -212,6 +206,10 @@ body {
 
 /* INCIO Formulario de reservacion */
 
+#reserva {
+    background-color: var(--blanco);
+}
+
 .form_container {
     background-color: var(--marron-rojizo);
     color: var(--blanco);
@@ -319,6 +317,11 @@ footer {
     margin-bottom: 1rem;
 }
 
+.footer_logo div h2 {
+    font-family: var(--font-nautigal);
+    font-size: 3rem;
+}
+
 .footer_contains {
     background-color: inherit;
 
@@ -381,20 +384,83 @@ footer {
 /* TABLET */
 @media (min-width: 768px) {
 
-    .title h2 {
-        font-size: 12.5vh;
-        font-weight: 500;
+    #presentation {
+        display: flex;
+        margin: 2rem auto 0;
     }
 
+    #speach {
+        width: 50%;
 
-    .links {
-        font-size: 14px;
+        & p:first-child {
+            font-size: 3.1rem;
+        }
 
-        &:hover {
-            color: white;
+        & p:last-child {
+            margin-top: 1.8rem;
+            font-size: 2.5vh;
         }
     }
 
+
+    #fondo_lateral_container {
+        display: block;
+        width: 50%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* transform: scaleX(-1) */
+        }
+    }
+
+    .title {
+        margin: 6rem auto 0rem;
+    }
+
+    .title h2 {
+        font-size: 4.8rem;
+        font-weight: 500;
+    }
+
+    #best_foods {
+        margin: 0 auto;
+    }
+
+
+    #nosotros {
+        font-size: 3rem;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 1.8rem;
+    }
+
+    .section_nosotros div p {
+        padding: 8px 16px 8px;
+    }
+
+    /* MENU */
+
+    .menu_title {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .subTitle_menu h4 {
+        font-size: 2.2rem;
+    }
+
+    /* Cards */
+    .menu-card {
+        transition: border 0.3s ease;
+
+        &:hover {
+            border: thin solid rgb(95, 95, 95);
+        }
+    }
+
+    /* Contacto */
 
     .contact_section {
         display: flex;
@@ -435,13 +501,21 @@ footer {
 
     /* Footer */
     footer {
-        padding: 3rem 2rem 1rem;
+        padding: 3rem 1rem 1rem;
     }
 
     .footer_container {
         display: flex;
         width: 100%;
         height: 200px;
+    }
+
+    .links {
+        font-size: 14px;
+
+        &:hover {
+            color: white;
+        }
     }
 
     .footer_logo {
