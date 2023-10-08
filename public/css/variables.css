@@ -11,6 +11,7 @@
     --color1: #FCFDEE;
     --color2: #EFC65D;
     --bg-gradiente: linear-gradient(to bottom, #EFC65D, #FCFDEE);
+    --bg-gradiente-reverse: linear-gradient(to top, #EFC65D, #FCFDEE);
     --marron-rojizo: #290A0A;
     --rojo-claro: #984141;
     --gris: #937272;
@@ -20,11 +21,4 @@
     /* Fuentes */
     --font-play: 'Playfair Display', serif;
     --font-nautigal: 'The Nautigal', cursive;
-    /* tamaño de fuentes */
-    --fs-xsm: 12.80px;
-    --fs-sm: 16px;
-    --fs-md: 20px;
-    --fs-lg: 25px;
-    --fs-xl: 31.25px;
-    --fs-xxl: 39.06px;
 }

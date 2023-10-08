@@ -22,6 +22,19 @@ body {
     font-family: var(--font-play);
 }
 
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--rojo-claro);
+    border-radius: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-image: var(--bg-gradiente);
+}
+
 #title_page {
     color: var(--marron-rojizo);
 }
@@ -138,6 +151,10 @@ body {
 
 .section_nosotros {
     padding: 10px;
+    border-top: 4px solid var(--rojo-claro);
+    border-bottom: 4px solid var(--rojo-claro);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #nosotros {
@@ -210,6 +227,10 @@ body {
     background-color: var(--blanco);
 }
 
+.contact_section {
+    margin-top: 2rem;
+}
+
 .form_container {
     background-color: var(--marron-rojizo);
     color: var(--blanco);
@@ -227,7 +248,8 @@ form {
     & h4 {
         margin: 0;
         text-align: center;
-        font-size: 6vh;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
     }
 }
 
@@ -299,8 +321,8 @@ form {
     color: var(--marron-rojizo);
 
     & h4 {
-        font-weight: 600;
-        font-size: 18px;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
         border-bottom: thin solid var(--marron-rojizo)
     }
 }
@@ -411,7 +433,6 @@ footer {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            /* transform: scaleX(-1) */
         }
     }
 
@@ -535,4 +556,137 @@ footer {
     #copy {
         text-align: end;
     }
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #presentation {
+        padding: 0 2.2rem;
+    }
+
+    #speach {
+        & p:first-child {
+            font-size: 4.8vw;
+            color: black;
+        }
+
+        & p:last-child {
+            margin-top: 1.8rem;
+            font-size: 2.5vh;
+        }
+    }
+
+    /* Nosotros */
+    
+    .section_nosotros {
+        border-top: 4px solid var(--rojo-claro);
+        border-bottom: 4px solid var(--rojo-claro);
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+
+    #banner_container {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .banner {
+        width: 30%;
+
+        &:nth-child(2) {
+            flex-grow: 0.5;
+        }
+    }
+
+    /* Menu */
+    .subTitle_menu {
+        border-bottom: 4px solid var(--rojo-claro);
+    }
+
+    .subTitle_menu h4 {
+        padding-left: 1.2rem;
+    }
+
+
+    /* Reserva */
+
+    #reserva {
+        background-image: var(--bg-gradiente-reverse);
+        padding: 2rem 0px;
+        margin-top: 3rem;
+    }
+
+    .contact_section {
+        justify-content: center;
+    }
+
+    .form_container,
+    .map_container {
+        width: 45%;
+    }
+
+    .form_container {
+        border-radius: 12px;
+    }
+
+    .campo {
+        font-size: 1rem;
+    }
+
+    .form_container .campo_container:nth-child(1),
+    .form_container .campo_container:nth-child(2) {
+        display: inline-block;
+    }
+
+    .form_container .campo_container:nth-child(1) {
+        width: 30%;
+    }
+
+    .form_container .campo_container:nth-child(2) {
+        width: 69%;
+    }
+
+    .button_container button {
+        transition: background-color .3s ease-in-out;
+
+        &:hover {
+            background-color: #7b3434;
+        }
+    }
+
+    .map_container {
+        padding: 0px 1.5rem;
+    }
+
+    .map_container .directions {
+        padding: 0px;
+    }
+
+    .map_container iframe {
+        border-radius: 1rem;
+        padding: 0px;
+    }
+
+    /* Footer */
+
+    footer {
+        margin: 0;
+    }
+
+    #footer_social i {
+        transition: font-size .1s ease-in-out;
+
+        &:hover {
+            font-size: 1.6rem;
+        }
+    }
+
 }
