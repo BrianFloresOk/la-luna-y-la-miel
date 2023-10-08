@@ -577,6 +577,11 @@ footer {
         }
     }
 
+    #fondo_lateral_container img {
+        position: relative;
+        top: -2rem;
+    }
+
     /* Nosotros */
     
     .section_nosotros {
