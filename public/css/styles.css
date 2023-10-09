@@ -646,6 +646,18 @@ footer {
         font-size: 1rem;
     }
 
+    .campo_container {
+    
+        & label {
+            font-weight: 500;
+            font-size: 14px;
+    
+            & span {
+                color: rgb(210 205 205);
+            }
+        }
+    }
+
     .form_container .campo_container:nth-child(1),
     .form_container .campo_container:nth-child(2) {
         display: inline-block;
