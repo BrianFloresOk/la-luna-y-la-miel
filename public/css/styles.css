@@ -147,6 +147,7 @@ body::-webkit-scrollbar-track {
 
 .section {
     margin-top: 7rem;
+    background-color: white;
 }
 
 .section_nosotros {
