@@ -156,6 +156,10 @@ body::-webkit-scrollbar-track {
     border-bottom: 4px solid var(--rojo-claro);
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    & p {
+        font-weight: 500;
+    }
 }
 
 #nosotros {

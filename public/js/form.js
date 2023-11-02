@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
         if(email.value === "" && fecha.value === "" && name.value === "") {
             alert("Hay campos vacíos, complete para reservar")
         } else {
-            alert("Reserva realizada")
+            alert("Reserva realizada. ¡Te esperamos!")
             email.value = ""
             fecha.value = ""
             name.value = ""
